@@ -1,0 +1,114 @@
+* {
+    padding:5px;
+    margin:5px;
+    background: 0b0b0c;
+    color: #0b0b0c;
+    font-family: Roboto;
+    font-optical-sizing:auto;
+    font-weight:300;
+    line-height:1.5;
+}
+
+#logo {
+    width: 18%;
+    display:block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+nav a:hover {
+    border: 1px solid #f5f5f7;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+
+footer {
+  border-top: 1px solid #d2d2d7;
+  padding: 24px 16px;
+  text-align: center;
+  color: #6e6e73;
+  font-size: 0.85em;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #333333; 
+  color: #ffffff;            
+  width: fit-content;
+  text-align: left;
+  padding-left: 10px;       
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+td {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+form * {
+  display: block;      /* Ensures elements sit on their own line to center correctly */
+  margin: 10px auto;   /* Centers the element horizontally and adds vertical spacing */
+  text-align: center;  /* Centers the text within labels and inputs */
+}
+
+button[type="submit"] {
+  padding: 8px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+.header { grid-area: header; }
+.nav_bar { grid-area: nav_bar; }
+.main { grid-area: main; }
+.main_img { grid-area: main-img; }
+.footer { grid-area: footer; }
+
+#longIntro {
+  display: none;
+}
+
+#readLess {
+  display: none;
+}
+
+#ticketForm {
+  display: none;
+  margin-top: 20px;
+}
