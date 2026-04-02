@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+</header>
+
+<nav class="nav_bar">
+    <a href="../index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="tickets.html">Buy Tickets</a>
+    <a href="checkout.html">Checkout</a>
+</nav>
+
+<main class="main">
+
+    <img src="../static/image_ed86001c.png" alt="MonoMuse Building" width="400">
+
+    <h2>Mission Statement</h2>
+    <p>
+        To preserve and expand the resources of art and science as agents of personal growth and social advancement.
+    </p>
+
+    <h2>Watch Our Museum in Action</h2>
+
+    <iframe src="https://www.youtube.com/embed/Pn12b1B908k?si=ajyYNzourN_CysU2&start=60"
+    title="YouTube video player"
+    allowfullscreen>
+    </iframe>
+    <h2>Find Us</h2>
+
+    <div id="map"></div>
+
+    <h2>Milestones</h2>
+    <ul>
+        <li>2023: Expansion of the museum space</li>
+        <li>2018: Launch of the Interactive Media Lab</li>
+        <li>2016: Museum opened</li>
+    </ul>
+
+</main>
+
+<figure class="main_img"></figure>
+
+<footer class="footer">
+    &copy; <span id="copyYear"></span> MonoMuse. All rights reserved
+</footer>
+
+</div>
+
+</body>
+</html>
