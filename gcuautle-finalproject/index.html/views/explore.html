@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Your JS -->
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+</header>
+
+    <nav class="nav_bar" id="navbar">
+        <button onclick="toggleMenu()">☰</button>
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+    
+    <main class="main">
+
+    <img src="../static/image_ed86001c.png" alt="Exterior view of MonoMuse museum building" width="400">
+
+    <h2>Mission Statement</h2>
+    <p>
+        To preserve and expand the resources of art and science as agents of personal growth and social advancement.
+    </p>
+
+    <!--video-->
+    <h2>Watch Our Museum in Action</h2>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/XfeCeRGASNY"
+            title="Museum Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    
+    <h2>Milestones</h2>
+    <ul>
+        <li>2023: Expansion of the museum space</li>
+        <li>2018: Launch of the Interactive Media Lab</li>
+        <li>2016: Museum opened</li>
+    </ul>
+
+    <!--Directions-->
+    <h2>Location & Directions</h2>  
+        <p>
+            MonoMuse is located in Pittsburgh, PA near Carnegie Mellon University.
+            Easily accessible by public transportation, car, or walking.
+        </p>
+
+        <p>
+            <strong>Address:</strong> 5000 Forbes Ave, Pittsburgh, PA
+        </p>
+
+    <!-- ✅ MAP -->
+    <h2>Find Us</h2>
+    <div class="map-container">
+    <div id="map"></div>
+    </div>
+
+
+</main>
+
+<figure class="main_img"></figure>
+
+<footer class="footer">
+    <p>&copy; <span id="copyYear"></span> MonoMuse&emsp;&emsp;&emsp;Contact Us:&emsp;Email: info@monomuse.com&emsp;Phone: (412) 123-4567</p>
+</footer>
+
+</div>
+
+</body>
+</html>

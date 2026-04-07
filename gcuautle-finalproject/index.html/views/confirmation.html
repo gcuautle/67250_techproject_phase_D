@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const total = localStorage.getItem("totalCost");
+            document.getElementById("finalTotal").innerText = total;
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+    <h2>Order Confirmation</h2>
+</header>
+
+<main class="main">
+
+<p>Your order has been successfully placed!</p>
+
+<p>Total Cost: $<span id="finalTotal"></span></p>
+
+<p>Thank you for visiting MonoMuse!</p>
+
+<a href="../index.html">Return Home</a>
+
+</main>
+
+</div>
+
+</body>
+</html>

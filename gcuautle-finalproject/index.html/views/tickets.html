@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Your JS -->
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+
+    <nav class="nav_bar" id="navbar">
+        <button onclick="toggleMenu()">☰</button>
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <main class="main">
+    
+    <h2>Plan Your Visit</h2>
+
+    <h3>Hours of Operation</h3>
+    <ul>
+        <li>Monday - Friday: 10:00 AM - 6:00 PM</li>
+        <li>Saturday: 10:00 AM - 8:00 PM</li>
+        <li>Sunday: 12:00 PM - 5:00 PM</li>
+    </ul>
+
+    <h3>Ticket Pricing</h3>
+    <p>All tickets are $18 per person.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Adult</td>
+                <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+                <td>$18</td>
+            </tr>
+
+            <tr>
+                <td>Student</td>
+                <td>Student ID required</td>
+                <td>$10</td>
+            </tr>
+
+            <tr>
+                <td>Member</td>
+                <td>Member ID required</td>
+                <td>$15</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="confirmPurchase()">Add to Cart</button>
+
+</main>
+
+<figure class="main_img"></figure>
+
+<footer class="footer">
+    <p>&copy; <span id="copyYear"></span> MonoMuse&emsp;&emsp;&emsp;Contact Us:&emsp;Email: info@monomuse.com&emsp;Phone: (412) 123-4567</p>
+</footer>
+</div>
+
+</body>
+</html>
